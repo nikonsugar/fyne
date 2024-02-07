@@ -1939,3 +1939,11 @@ func getTextWhitespaceRegion(row []rune, col int, expand bool) (int, int) {
 	}
 	return start, end
 }
+
+// NOTE(TT): export some APIs
+// ==========================
+func (e *Entry) SelectAll() {
+	e.selectAll()
+}
+
+// ---------------------------
